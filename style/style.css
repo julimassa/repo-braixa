@@ -42,6 +42,8 @@ header .boton {
 }
 header img {
     width: 100px;
+    padding: 5px 10px;
+    margin: 20px;
 
 }
 
