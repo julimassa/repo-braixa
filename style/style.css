@@ -24,7 +24,7 @@ header {
 }
 header a {
     color: var(--main-text-light);
-    display: flex;
+   
     
 }
 header .logo {
@@ -91,8 +91,8 @@ h1{
     text-align: center;
     font-weight: 300;
     margin-top: 80px;
-    margin: 10px;
-    display: flex;
+    
+    
     
 
 }
@@ -100,8 +100,8 @@ h2{
     font-size: 24px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--main-color-secondary);
-    margin: 10px 10px;
-    display: flex;
+    text-align: center;
+   
  
 }
 h3{
@@ -155,7 +155,10 @@ section img {
     justify-self: center;   
    
 }
-
+li {
+    margin: 20px 10px;
+    text-align: center ;
+}
 a{
     color: var(--main-text-light);
     font-size: 20px;
@@ -166,6 +169,7 @@ a{
 p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    margin: 20px;
 }
 article p{
     color: var(--main-text-light);
@@ -187,12 +191,16 @@ footer {
     flex-direction: column;
  
 }
-footer h3 {
+element.style {footer h3 {
     font-size: 14px;
 }
 footer ul {
     list-style: none;
     font-size: 14px;
+}
+footer ul li {
+    margin-top: 3px;
+    text-align: center;
 }
 footer span {
     font-size: 12px;
@@ -232,7 +240,7 @@ body{
 }
 
 .boton{
-    color: black;
+    color: white;
     font-size: 14px;
     background-color: var(--main-text-light);
     border-radius: 4px;
