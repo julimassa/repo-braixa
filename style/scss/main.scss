@@ -1,0 +1,33 @@
+// base
+@use "./base/reset";
+@use "./base/typography";
+@import "./base/vars";
+
+
+// componenetes
+@import "./components/button";
+@import "./components/title";
+
+// layout
+@import "./layout/footer";
+@import "./layout/header";
+
+// Pages
+@import "./pages/home";
+@import "./pages/productos";
+@import "./pages/talles";
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+

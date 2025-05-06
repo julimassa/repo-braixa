@@ -1,0 +1,25 @@
+table {
+    display: table;
+    border: 1px solid gray;
+    border-style: double;
+    text-indent: initial;
+    text-align: center;
+    border-spacing: 30px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    tr {
+        td {
+            display: table-cell;
+            vertical-align: inherit;
+            unicode-bidi: isolate;
+            color: black;
+            border: 1px solid gray;
+        
+        
+            
+        }
+    }
+}

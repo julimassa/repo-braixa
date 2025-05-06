@@ -1,0 +1,16 @@
+@import "../base/vars";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: $main-text-light;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: flex;
+}
+

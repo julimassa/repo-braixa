@@ -1,0 +1,48 @@
+@import "../base/reset";
+
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+h1{
+    color: $main-color-secondary;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 80px;
+  
+
+}
+h2{
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #b1a59f;
+    text-align: center;
+    font-weight: 300;
+   
+ 
+}
+h3{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    text-align: center;
+    color: $main-text-light;
+   
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 20px;
+}
+
+li {
+    margin: 10px 10px;
+    text-align: center;
+    list-style: none;
+    
+}
