@@ -1,67 +1,75 @@
-header {
-    background-color: rgb(255, 255, 255); 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    
-    a {
-        color: $main-text-light;
-             
-    }
-         
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
 
- img {
-    width: 110px;
-    padding: 5px 10px;
-    margin: 20px;
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+
+    }
+
+.navbar {
     display: flex;
     align-items: center;
-                
+    justify-content: space-between;    
+    background-color: rgb(245, 182, 65);
+    color: white;
+    padding: 10px 20px;
+  
+}
+.logo img {
+        width: 100px;
     }
+
+.nav-links {
+        display: flex;
+        gap: 20px;
+        list-style: none;
         
-    
-    .boton {
-        color: white;
-        font-size: 14px;
-        background-color: $main-text-light;
-        border-radius: 4px;
-        padding: 5px 10px;
-        align-items: center;
-    }
-    
-    Nav {
-        ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: space-between;
-            
-            li {
-            margin: 0 10px;
-            text-align: center;
-           }
+
+        li {
+            a {
+                color: white;
+                list-style: none;
+                text-decoration: none;
+                transition: color 0.3;
+            }
+
+            a:hover {
+                color: rgb(88, 62, 12);
+            }
         }
     }
 
-    @media (max-width: 240px) {
-
+@media (max-width: 768px){
+    .navbar {
+        position: relative;
     }
-
-    @media (max-width: 350px) {
-        display: grid;
+    .burger {
+        display: flex;
     }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-color: rgb(245, 182, 65);
+        margin: 0;
+        text-align: center;
+        transition: all 0.3;
 
-    @media (max-width: 768px) {
         
     }
-
-    @media (max-width: 960px) {
-
-    }
+    .nav-links.active {
+        padding-left: 0px;
+        display: flex;
+        }
+   
 
 }
-
