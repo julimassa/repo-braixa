@@ -27,6 +27,7 @@ a {
 body {
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 h1 {
@@ -44,10 +45,11 @@ h2 {
   color: #b1a59f;
   text-align: center;
   font-weight: 300;
+  margin: 20px 12px 0;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-style: oblique;
   text-align: center;
@@ -58,6 +60,8 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   margin: 20px;
+  max-width: 900px;
+  text-align: justify;
 }
 
 li {
@@ -81,7 +85,7 @@ footer {
   background-color: rgb(241, 241, 166);
   margin-top: 14px;
   font-size: 16px;
-  height: 300px;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -97,6 +101,7 @@ footer h3 {
 }
 footer nav ul {
   list-style: none;
+  text-align: center;
   font-size: 14px;
 }
 footer nav ul li {
@@ -109,14 +114,16 @@ footer span {
 }
 footer .footerContainer {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
   align-items: center;
 }
 footer .footerContainer form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3px 40px;
+  margin: 30px 40px;
 }
 footer .footerContainer form input {
   margin: 10px 0px;
@@ -129,6 +136,49 @@ footer .wpp img {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+form h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+form textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+form #boton {
+  background: #31384A;
+  color: #fff;
+  padding: 20px;
+}
+form #boton:hover {
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  form form {
+    width: 100%;
+  }
 }
 
 .burger {
@@ -154,7 +204,7 @@ footer .wpp img {
 }
 
 .logo img {
-  width: 100px;
+  width: 160px;
 }
 
 .nav-links {
@@ -288,6 +338,33 @@ table tr td {
   unicode-bidi: isolate;
   color: black;
   border: 1px solid gray;
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+main img {
+  width: 100%;
+  margin-top: 30px;
+}
+main .wpp img {
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+main span {
+  font-size: 12px;
+  margin-left: 20px;
+}
+main iframe {
+  border: 0;
+  width: 100%;
+  margin: 3rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

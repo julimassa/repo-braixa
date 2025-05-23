@@ -9,35 +9,51 @@
 </head>
 
 <body>
-    <Header id="header">
-        <img src="../Img/logo-braixa.png" alt="">
-        <nav>
-            <ul>
-                <li>
+    <header id="header">
+        
+        
+        <nav class="navbar">
+            <a class="logo" href="../index.html">
+            <img src="../Img/logo-braixa-transparente-iloveimg.png" alt="Logo de Braixa">
+        
+            </a>
+
+            <ul class="nav-links">
+                
+                <li class="li_links">
                     <a href="../index.html">Home</a>
                 </li>
-                <li>
+                <li class="li_links">
                     <a href="../pages/productos.html">Productos</a>
                 </li>
-                <li>
+                <li class="li_links">
                     <a href="../pages/como-comprar.html">Como Comprar</a>
                 </li>
-                <li>
+                <li class="li_links">
                     <a href="../pages/guia-de-talles.html">Guia de Talles</a>
                 </li>
-                <li>
+                <li class="li_links">
                     <a href="../pages/nuestra-historia.html">Nuestra Historia</a>
                 </li>
-                <li>
+                <li class="li_links">
                     <a href="../pages/contacto.html">Contacto</a>
                 </li>
             </ul>
+
+            <div class="burger" aria-label="Abrir menú de navegación">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            
         </nav>
-        <a class="boton" href="../pages/contacto.html">Registrese</a>
-    </Header>
+        
+            
+    </header> 
+
     <main>
         <h1>Talles</h1>
-        <h3>El numero del Talle es igual al largo del cinturon en centimetros</H3>
+        <h3>Es importante saber que el numero del Talle es igual al largo del cinturon en centimetros</H3>
         
         <Section>
             <Table>
@@ -80,73 +96,75 @@
                 </tr>
             </Table>
         </Section>
-        <H3>Como sabes tu talle?, te medis en donde normalmente usas el cinturon y a esa medida le sumas 10 ó 15 cm.</H3>
+
+        <h3>¿Como sabes tu talle?, te medis en donde normalmente usas el cinturon y a esa medida le sumas 10 ó 15 cm.</h3>
+
     </main>
+
     <footer>
         <a href="" class="wpp">
             <img src="../Img/icono-whatsapp.png" alt="Icono de WhatsApp">
         </a>
-       <div class="footerContainer">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="../pages/productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="../pages/como-comprar.html">Como Comprar</a>
-                </li>
-                <li>
-                    <a href="../pages/guia-de-talles.html">Guia de Talles</a>
-                </li>
-                <li>
-                    <a href="../pages/nuestra-historia.html">Nuestra Historia</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <div>
-            <h3>Informacion de Contacto</h3>
-            <ul>
-                <li>Telefono: 983393993493</li>
-                <li>WhatsApp: oo3oieieij</li>
-                <li>Direccion: juan de los palotes y puerta verde</li>
-                <li>Pais: Argentina</li>
-                <li>Mail: braixa@gmail.com </li>
+        <div class="footerContainer">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="../pages/como-comprar.html">Como Comprar</a>
+                    </li>
+                    <li>
+                        <a href="../pages/guia-de-talles.html">Guia de Talles</a>
+                    </li>
+                    <li>
+                        <a href="../pages/nuestra-historia.html">Nuestra Historia</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <h3>Informacion de Contacto</h3>
+                <ul>
+                    <li>Tel.: +54 11 5768 6574</li>
+                    <li>WhatsApp: +54 9 11 3425 4563</li>
+                    <li>Direccion: Pasaje El Maestro 5467 PB Loc. 2</li>
+                    <li>Capital Federal - Buenos Aires - Argentina</li>
+                    <li>e-mail: braixa@gmail.com </li>                    
+
+                </ul>
+
                 
-                
+                <a href="https://www.instagram.com/braixa" target="_blank">Síguenos en Instagram: @braixa</a>
 
-            </ul>
+            </div>
 
-            
-            <form>
-                <label for="email">Suscríbase a nuestro newsletter</label>
-                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-                <button class="boton" type="submit">Suscríbase</button>
-            </form>
-
-            
-
-        </div>
-
-        <a href="https://www.instagram.com/braixa" target="_blank">Síguenos en Instagram: @braixa</a>
-        
        </div>
         
         
 
         <span>&copy; 2025 Braixa. Todos los derechos reservados.</span>
 
-        <a class ="boton" href="./guia-de-talles.html">volver arriba</a>
+        <a class ="boton" href="index.html">volver arriba</a>
 
                
 
 
     </footer>
+
+    <script>
+    const burger = document.querySelector(".burger")
+    const navLinks = document.querySelector(".nav-links") 
+
+    burger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    })
+</script>    
     
 </body>
 
